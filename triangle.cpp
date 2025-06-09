@@ -7,7 +7,7 @@ Triangle::Triangle(string name, float a, float b, float c) : Figure(name)
     m_b = b;
     m_c = c;
     m_s = (m_a + m_b + m_c)/2;
-    m_area = sqrt(m_s*(m_s-a)*(m_s-b)*(m_s-c));
+    m_area = sqrt(m_s*(m_s-a)*(m_s-b)*(m_s-c)); //wzor herona
    ;
 }
 
