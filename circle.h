@@ -8,8 +8,7 @@ class Circle : public Figure
 {
 private:
     float m_r;
-    float m_area;
-    float m_perimeter;
+
 
 public:
     Circle(string name = "", float r = 0 );

@@ -12,7 +12,7 @@ private:
     float m_c;
     float m_s;
     float m_area;
-    float m_perimeter;
+
 
 public:
     Triangle(string name = "", float a = 0, float b = 0, float c = 0);

@@ -3,24 +3,23 @@
 Circle ::Circle(string name, float r) : Figure(name)
 {
     m_r = r;
-    m_area = m_r * m_r * M_PI;
-    m_perimeter = 2*m_r*M_PI;
+
 }
 
 float Circle ::Area() const
 {
-    return m_area;
+    return m_r * m_r * M_PI;
 }
 
 float Circle::Perimeter() const
 {
-    return m_perimeter;
+    return 2*m_r*M_PI;
 }
 
 void Circle::Info() const
 {
     cout << "Circle: " << Name() << endl;
     cout << "Dimensions: " " Radius: " << m_r << endl;
-    cout << "Area: " << m_area << endl;
-    cout << "Perimeter: " << m_perimeter << endl;
+    cout << "Area: " << m_r * m_r * M_PI << endl;
+    cout << "Perimeter: " << 2*m_r*M_PI << endl;
 }

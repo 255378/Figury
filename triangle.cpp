@@ -8,7 +8,7 @@ Triangle::Triangle(string name, float a, float b, float c) : Figure(name)
     m_c = c;
     m_s = (m_a + m_b + m_c)/2;
     m_area = sqrt(m_s*(m_s-a)*(m_s-b)*(m_s-c));
-    m_perimeter = m_a + m_b + m_c;
+   ;
 }
 
 float Triangle::Area() const
@@ -18,7 +18,7 @@ float Triangle::Area() const
 
 float Triangle::Perimeter() const
 {
-    return m_perimeter;
+    return m_a + m_b + m_c;
 }
 
 void Triangle::Info() const
@@ -26,5 +26,5 @@ void Triangle::Info() const
     cout << "Triangle: " << Name() << endl;
     cout << "Dimensions: " << m_a << " x " << m_b << " x " << m_c <<  endl;
     cout << "Area: " << m_area << endl;
-    cout << "Perimeter: " << m_perimeter << endl;
+    cout << "Perimeter: " <<  m_a + m_b + m_c << endl;
 }
