@@ -9,8 +9,7 @@ class Rectangle : public Figure
 private:
     float m_a;
     float m_b;
-    float m_area;
-    float m_perimeter;
+
 
 public:
     Rectangle(string name = "", float a = 0, float b = 0);
